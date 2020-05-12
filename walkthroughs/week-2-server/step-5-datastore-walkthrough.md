@@ -7,7 +7,7 @@ This walkthrough introduces Datastore, which lets you store data permanently.
 You can return to this walkthrough anytime by running this command:
 
 ```bash
-teachme ~/step/walkthroughs/week-2-server/step-5-datastore-walkthrough.md
+teachme ~/software-product-sprint/walkthroughs/week-2-server/step-5-datastore-walkthrough.md
 ```
 
 Click the **Start** button to begin!
@@ -23,7 +23,8 @@ them. Decide what makes sense for your goal.
 Don't be afraid to get creative, but focus on finishing a
 [minimum viable product](https://en.wikipedia.org/wiki/Minimum_viable_product)
 that proves you have all of the pieces connected, and then come back later and
-add extra features if you have time left over.
+add extra features if you have time left over. We'll be adding a couple
+additional features in the next walkthrough as well.
 
 ## Persistent Storage
 
@@ -56,7 +57,7 @@ example project.
 Datastore comes with the App Engine environment, so to use Datastore, first add
 the App Engine dependency to your
 <walkthrough-editor-open-file
-    filePath="step/portfolio/pom.xml">
+    filePath="software-product-sprint/portfolio/pom.xml">
   pom.xml
 </walkthrough-editor-open-file>
 file:
@@ -76,7 +77,7 @@ Engine SDK, which includes Datastore.
 
 Open the
 <walkthrough-editor-open-file
-    filePath="step/walkthroughs/week-2-server/examples/todo-list/src/main/java/com/google/sps/servlets/NewTaskServlet.java">
+    filePath="software-product-sprint/walkthroughs/week-2-server/examples/todo-list/src/main/java/com/google/sps/servlets/NewTaskServlet.java">
   NewTaskServlet.java
 </walkthrough-editor-open-file>
 file in the `todo-list` directory to see how it uses Datastore to save a task.
@@ -102,7 +103,7 @@ An entity has a **kind**, which is similar to a class name.
 
 Look at the `doPost()` function in the
 <walkthrough-editor-open-file
-    filePath="step/walkthroughs/week-2-server/examples/todo-list/src/main/java/com/google/sps/servlets/NewTaskServlet.java">
+    filePath="software-product-sprint/walkthroughs/week-2-server/examples/todo-list/src/main/java/com/google/sps/servlets/NewTaskServlet.java">
   NewTaskServlet.java
 </walkthrough-editor-open-file>
 file to see how it creates an `Entity` by giving it a *kind* of `Task`:
@@ -144,7 +145,7 @@ you need it.
 
 Modify your
 <walkthrough-editor-open-file
-    filePath="step/portfolio/src/main/java/com/google/sps/servlets/DataServlet.java">
+    filePath="software-product-sprint/portfolio/src/main/java/com/google/sps/servlets/DataServlet.java">
   DataServlet.java
 </walkthrough-editor-open-file>
 file to store the comments as entities in Datastore. Get this working before
@@ -161,7 +162,7 @@ To view the admin page for your live server, go to
 [https://console.cloud.google.com/datastore](https://console.cloud.google.com/datastore).
 
 Use the admin page to confirm that your data is stored correctly. After you get
-this step working, create a pull request and send it to your host for
+this step working, create a pull request and send it to your advisor for
 review!
 
 ## Loading Entities
@@ -171,7 +172,7 @@ requests it.
 
 The `todo-list` example contains a
 <walkthrough-editor-open-file
-    filePath="step/walkthroughs/week-2-server/examples/todo-list/src/main/java/com/google/sps/servlets/ListTasksServlet.java">
+    filePath="software-product-sprint/walkthroughs/week-2-server/examples/todo-list/src/main/java/com/google/sps/servlets/ListTasksServlet.java">
   ListTasksServlet.java
 </walkthrough-editor-open-file>
 file that loads entities from Datastore.
@@ -198,7 +199,7 @@ app is shut down or restarted.
 
 Next, add some code to your
 <walkthrough-editor-open-file
-    filePath="step/portfolio/src/main/java/com/google/sps/servlets/DataServlet.java">
+    filePath="software-product-sprint/portfolio/src/main/java/com/google/sps/servlets/DataServlet.java">
   DataServlet.java
 </walkthrough-editor-open-file>
 file that loads comments from Datastore.
@@ -213,13 +214,13 @@ the page, and even when you restart your server!
 
 Congratulations! Your portfolio page should now support comments that are
 permanently stored in Datastore. Run a dev server to confirm that everything
-works, and then create a pull request and send that to your host for a code
+works, and then create a pull request and send that to your advisor for a code
 review!
 
 Then go back to the comments walkthrough to continue:
 
 ```bash
-teachme ~/step/walkthroughs/week-2-server/comments-walkthrough.md
+teachme ~/software-product-sprint/walkthroughs/week-2-server/comments-walkthrough.md
 ```
 
 ### Learn More

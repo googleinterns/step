@@ -9,7 +9,7 @@ comments.
 You can return to this walkthrough anytime by running this command:
 
 ```bash
-teachme ~/step/walkthroughs/week-2-server/comments-walkthrough.md
+teachme ~/software-product-sprint/walkthroughs/week-2-server/comments-walkthrough.md
 ```
 
 Click the **Start** button to begin!
@@ -42,7 +42,7 @@ To learn about servlets, follow the `step-1-servlets-walkthrough.md`
 walkthrough:
 
 ```bash
-teachme ~/step/walkthroughs/week-2-server/step-1-servlets-walkthrough.md
+teachme ~/software-product-sprint/walkthroughs/week-2-server/step-1-servlets-walkthrough.md
 ```
 
 Work through the servlets walkthrough and then return here.
@@ -56,7 +56,7 @@ to make sure this works.
 
 This is the first step towards implementing a full server that supports
 comments. Create a pull request from what you have so far, and send that to your
-host for a code review!
+advisor for a code review!
 
 ## Step 2: Fetch
 
@@ -67,7 +67,7 @@ To learn about the `fetch()` function, follow the `step-2-fetch-walkthrough.md`
 walkthrough:
 
 ```bash
-teachme ~/step/walkthroughs/week-2-server/step-2-fetch-walkthrough.md
+teachme ~/software-product-sprint/walkthroughs/week-2-server/step-2-fetch-walkthrough.md
 ```
 
 Work through the fetch walkthrough and then return here.
@@ -85,7 +85,7 @@ everything is connected. Make sure you run a development server to make sure
 everything works.
 
 After confirming that everything works, create a pull request from what you have
-so far, and send that to your host for a code review!
+so far, and send that to your advisor for a code review!
 
 ## Step 3: JSON
 
@@ -95,7 +95,7 @@ libraries, which makes it a popular choice for representing data in JavaScript.
 To learn about JSON, follow the `step-3-json-walkthrough.md` walkthrough:
 
 ```bash
-teachme ~/step/walkthroughs/week-2-server/step-3-json-walkthrough.md
+teachme ~/software-product-sprint/walkthroughs/week-2-server/step-3-json-walkthrough.md
 ```
 
 Work through the JSON walkthrough and then return here.
@@ -107,7 +107,7 @@ request comments data, and your server should respond with some hard-coded JSON
 data. Your JavaScript should add these comments to the page when it loads.
 
 After running a dev server and confirming that everything works, create a pull
-request from what you have so far, and send that to your host for a code
+request from what you have so far, and send that to your advisor for a code
 review!
 
 ## Step 4: HTML Forms and POST Requests
@@ -118,7 +118,7 @@ To learn about HTML forms and POST requests, follow the
 `step-4-post-walkthrough.md` walkthrough:
 
 ```bash
-teachme ~/step/walkthroughs/week-2-server/step-4-post-walkthrough.md
+teachme ~/software-product-sprint/walkthroughs/week-2-server/step-4-post-walkthrough.md
 ```
 
 Work through the POST walkthrough and then return here.
@@ -128,7 +128,7 @@ Work through the POST walkthrough and then return here.
 At this point, you should have a fully-functional comments feature. You may have
 noticed that the comments are deleted whenever you restart your server. You'll
 fix that next, but for now run a dev server to confirm that what you have so far
-works. Then create a pull request and send it to your host for a code review.
+works. Then create a pull request and send it to your advisor for a code review.
 
 ## Step 5: Datastore
 
@@ -138,7 +138,7 @@ To learn about Datastore, follow the `step-5-datastore-walkthrough.md`
 walkthrough:
 
 ```bash
-teachme ~/step/walkthroughs/week-2-server/step-5-datastore-walkthrough.md
+teachme ~/software-product-sprint/walkthroughs/week-2-server/step-5-datastore-walkthrough.md
 ```
 
 Work through the Datastore walkthrough and then return here.
@@ -147,7 +147,26 @@ Work through the Datastore walkthrough and then return here.
 
 At this point, you should have a fully-functional comments feature, including
 saving and loading! Run a dev server to confirm that everything works, and then
-create a pull request and send it to your host for a code review.
+create a pull request and send it to your advisor for a code review.
+
+## Step 6: Additional Features
+
+Now that you have completed an [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product),
+you'll add a couple more features to your comments functionality.
+
+For instructions, follow the `step-6-additional-features-walkthrough.md` walkthrough:
+
+```bash
+teachme ~/software-product-sprint/walkthroughs/week-2-server/step-6-additional-features-walkthrough.md
+```
+
+Work through the additional features walkthrough and then return here.
+
+### Pull Request
+
+At this point, your comments feature should now support deletion and provide controls
+for how many comments are fetched and displayed. Run a dev server to confirm that everything
+works, and then create a pull request and send it to your advisor for a code review.
 
 ## Live Server
 
@@ -156,7 +175,7 @@ world, you can deploy it to your live server!
 
 Last week, you should have added your project ID to your
 <walkthrough-editor-open-file
-    filePath="step/portfolio/src/main/webapp/WEB-INF/appengine-web.xml">
+    filePath="software-product-sprint/portfolio/src/main/webapp/WEB-INF/appengine-web.xml">
   appengine-web.xml
 </walkthrough-editor-open-file>
 file. If so, you can deploy to your live server by executing this command from
@@ -182,25 +201,31 @@ When you're done, share this link in the chat and with your team!
 
 <walkthrough-conclusion-trophy></walkthrough-conclusion-trophy>
 
-Congratulations! You now have a working comment feature! Make sure your
-[MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) works and is
-submitted to your GitHub repo by the end of the week.
+Congratulations! You now have a working comment feature! Make sure everything
+works and is submitted to your GitHub repo by the end of the week.
 
 If you have some time left over and you want to learn more, here are a few ideas
 for what to do next:
 
+-   Extend your servlet to support full
+    [pagination](https://medium.com/uxness/best-practices-for-designing-pagination-in-web-1c33140f31b),
+    rather than always returning the first N results.
+-   Support deletion of specific comments. You'll need a way to uniquely identify
+    comments, and a way to include that identifier in your request to the server.
 -   Add a text field that allows users to specify their name as well as a
-    comment.
+    comment. If you want to go even farther, consider adding a way to filter
+    comments by the user that made them.
 -   Add a dropdown box that allows users to add a mood (like happy or sad) to
-    their comments.
+    their comments. Check out the HTML
+    [\<select\> tag](https://www.w3schools.com/tags/tag_select.asp) for this one.
 -   Allow users to change the order that comments display: newest first, oldest
     first, longest first, etc.
--   What happens when you have 1000 comments? Should they all show?
 -   Improve error handling and security. What if a user enters HTML content or
-    JavaScript code?
+    JavaScript code in one of their comments? Try googling "HTML injection" or
+    "Cross-site scripting" for examples of why this might be an issue.
 
 To start the next set of projects, run the libraries walkthrough:
 
 ```bash
-teachme ~/step/walkthroughs/week-3-libraries/libraries-walkthrough.md
+teachme ~/software-product-sprint/walkthroughs/week-3-libraries/libraries-walkthrough.md
 ```
