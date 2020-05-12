@@ -11,7 +11,7 @@ our comments functionality:
 You can return to this walkthrough anytime by running this command:
 
 ```bash
-teachme ~/software-product-sprint/walkthroughs/week-2-server/step-6-additional-features-walkthrough.md
+teachme ~/step/walkthroughs/week-2-server/step-6-additional-features-walkthrough.md
 ```
 
 Click the **Start** button to begin!
@@ -106,9 +106,9 @@ your comments are deleted and cleared from the page.
 
 Congratulations! You have added two important features to your comment
 functionality. After making sure that everything is working properly in
-a dev server, create a pull request and send it to your advisor for
+a dev server, create a pull request and send it to your host for
 review. Then go back to the comments walkthrough to continue:
 
 ```bash
-teachme ~/software-product-sprint/walkthroughs/week-2-server/comments-walkthrough.md
+teachme ~/step/walkthroughs/week-2-server/comments-walkthrough.md
 ```  
