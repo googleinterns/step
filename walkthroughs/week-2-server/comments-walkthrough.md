@@ -149,6 +149,25 @@ At this point, you should have a fully-functional comments feature, including
 saving and loading! Run a dev server to confirm that everything works, and then
 create a pull request and send it to your host for a code review.
 
+## Step 6: Additional Features
+
+Now that you have completed an [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product),
+you'll add a couple more features to your comments functionality.
+
+For instructions, follow the `step-6-additional-features-walkthrough.md` walkthrough:
+
+```bash
+teachme ~/step/walkthroughs/week-2-server/step-6-additional-features-walkthrough.md
+```
+
+Work through the additional features walkthrough and then return here.
+
+### Pull Request
+
+At this point, your comments feature should now support deletion and provide controls
+for how many comments are fetched and displayed. Run a dev server to confirm that everything
+works, and then create a pull request and send it to your host for a code review.
+
 ## Live Server
 
 When you're happy with your comments feature and you're ready to show it to the
@@ -182,22 +201,28 @@ When you're done, share this link in the chat and with your team!
 
 <walkthrough-conclusion-trophy></walkthrough-conclusion-trophy>
 
-Congratulations! You now have a working comment feature! Make sure your
-[MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) works and is
-submitted to your GitHub repo by the end of the week.
+Congratulations! You now have a working comment feature! Make sure everything
+works and is submitted to your GitHub repo by the end of the week.
 
 If you have some time left over and you want to learn more, here are a few ideas
 for what to do next:
 
+-   Extend your servlet to support full
+    [pagination](https://medium.com/uxness/best-practices-for-designing-pagination-in-web-1c33140f31b),
+    rather than always returning the first N results.
+-   Support deletion of specific comments. You'll need a way to uniquely identify
+    comments, and a way to include that identifier in your request to the server.
 -   Add a text field that allows users to specify their name as well as a
-    comment.
+    comment. If you want to go even farther, consider adding a way to filter
+    comments by the user that made them.
 -   Add a dropdown box that allows users to add a mood (like happy or sad) to
-    their comments.
+    their comments. Check out the HTML
+    [\<select\> tag](https://www.w3schools.com/tags/tag_select.asp) for this one.
 -   Allow users to change the order that comments display: newest first, oldest
     first, longest first, etc.
--   What happens when you have 1000 comments? Should they all show?
 -   Improve error handling and security. What if a user enters HTML content or
-    JavaScript code?
+    JavaScript code in one of their comments? Try googling "HTML injection" or
+    "Cross-site scripting" for examples of why this might be an issue.
 
 To start the next set of projects, run the libraries walkthrough:
 

@@ -23,7 +23,8 @@ them. Decide what makes sense for your goal.
 Don't be afraid to get creative, but focus on finishing a
 [minimum viable product](https://en.wikipedia.org/wiki/Minimum_viable_product)
 that proves you have all of the pieces connected, and then come back later and
-add extra features if you have time left over.
+add extra features if you have time left over. We'll be adding a couple
+additional features in the next walkthrough as well.
 
 ## Persistent Storage
 
