@@ -1,7 +1,7 @@
 # Google Student Training in Engineering Program
 
 This repo contains the projects you'll work on for the first half of STEP.
-This work is based on the [Google Software Product Sprint](https://github.com/google/step) program.
+This work is based on the [Google Software Product Sprint](https://github.com/google/software-product-sprint) program.
 
 To get started:
 
