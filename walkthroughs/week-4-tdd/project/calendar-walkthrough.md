@@ -93,8 +93,8 @@ file. Write one test for each of the following scenarios:
 1. Based on `everyAttendeeIsConsidered`, add an optional attendee C who has an all-day event. The same three time slots should be returned as when C was not invited.
 2. Also based on `everyAttendeeIsConsidered`, add an optional attendee C who has an event between 8:30 and 9:00. Now only the early and late parts of the day should be returned.
 3. Based on `justEnoughRoom`, add an optional attendee B who has an event between 8:30 and 8:45. The optional attendee should be ignored since considering their schedule would result in a time slot smaller than the requested time.
-4. No mandatory attendees, just two optional attendees with several gaps in their schedules.
-5. No mandatory attendees, just two optional attendees with no gaps in their schedules.
+4. No mandatory attendees, just two optional attendees with several gaps in their schedules. Those gaps should be identified and returned.
+5. No mandatory attendees, just two optional attendees with no gaps in their schedules. `query` should return that no time is available.
 
 Feel free to add additional tests for other scenarios that you think might be worth testing.
 
