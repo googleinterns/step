@@ -46,7 +46,7 @@ teachme ~/step/walkthroughs/week-3-libraries/blobstore/blobstore-walkthrough.md
 
 Image analysis allows you to detect the contents of an image.
 
-Since this library requires Blobstore make sure to complete the Blobstore project first. Blobstore and Image Analysis count as two libraries for our purposes.
+Since this library requires Blobstore, make sure to complete the Blobstore project first. Blobstore and Image Analysis count as two libraries for our purposes.
 
 Start the image analysis walkthrough by executing this command:
 
