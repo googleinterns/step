@@ -83,7 +83,7 @@ You are going to be adding some new functionality to your calendar, specifically
 
 The basic functionality of optional attendees is that if one or more time slots exists so that both mandatory and optional attendees can attend, return those time slots. Otherwise, return the time slots that fit just the mandatory attendees.
 
-Before implementing this feature, add some new tests to tbe <walkthrough-editor-open-file
+Before implementing this feature, add some new tests to the <walkthrough-editor-open-file
     filePath="step/walkthroughs/week-4-tdd/project/src/test/java/com/google/sps/FindMeetingQueryTest.java">
   FindMeetingQueryTest.java
 </walkthrough-editor-open-file>
