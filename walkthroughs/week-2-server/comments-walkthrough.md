@@ -186,7 +186,7 @@ mvn appengine:update
 ```
 
 -   The first time you run this command, the console will give you a link. Open
-    that link, and login to that page using your `@sps-program` account.
+    that link, and login to that page using your `@google.com` account.
 -   After you login, you'll see a long string of characters. Copy those
     characters.
 -   Paste the characters into the console and press enter.

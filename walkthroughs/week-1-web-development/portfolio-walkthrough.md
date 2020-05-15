@@ -212,7 +212,7 @@ and colors. The
 </walkthrough-editor-open-file>
 file contains some default styling.
 
-Learning CSS is **optional** for SPS. You can skip this step if you want.
+Learning CSS is **optional** for STEP. You can skip this step if you want.
 But if you're curious, the
 [W3Schools tutorial](https://www.w3schools.com/css/css_intro.asp) is a great
 place to learn more. We recommend the
@@ -367,7 +367,7 @@ mvn appengine:update
 ```
 
 -   The first time you run this command, the console will give you a link. Open
-    that link, and login to that page using your `@sps-program` account.
+    that link, and login to that page using your `@google.com` account.
 -   After you login, you'll see a long string of characters. Copy those
     characters.
 -   Paste the characters into the console and press enter.
@@ -380,8 +380,9 @@ When you're done, share this link in the chat and with your team!
 ## Pull Requests
 
 Your host will be reviewing your code to provide feedback and support. If you
-haven't already, follow the directions on the SPS site to create a pull
-request from your code so your host can review it.
+haven't already, follow the instructions
+[here](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
+to create a pull request from your code so your host can review it.
 
 You don't have to wait until you're finished to send your code for review. In
 fact, it's better if you send multiple small pull requests instead of one big
@@ -398,7 +399,7 @@ Congratulations, you now have a portfolio page deployed to a live URL! Make sure
 you share your URL with your team and in the chat.
 
 If you have extra time left over, consider adding a page that describes your
-experiences with SPS so far, or writing JavaScript that makes your page
+experiences with STEP so far, or writing JavaScript that makes your page
 interactive, or using CSS to make your page more beautiful.
 
 Next week, you'll learn about server-side code and add a comment feature to your

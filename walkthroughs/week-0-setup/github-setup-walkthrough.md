@@ -25,7 +25,7 @@ If you already have a GitHub account, you can skip this step.
 
 Go to [GitHub](https://github.com/) and register for an account.
 
-Make sure you use your own email address here, not your SPS account!
+Make sure you use your own email address here, not your `@google.com` account!
 
 ## Unlink Google's Repo
 
@@ -125,7 +125,7 @@ set your repo to require pull requests.
 
 Before you can do anything else with git, you need to tell it who you are, so
 it knows who to attribute commits to. First set your email (make sure to use
-the same email as your github account, and not your SPS one):
+the same email as your GitHub account, and not your `@google.com` one):
 
 ```bash
 git config --global user.email "you@example.com"
