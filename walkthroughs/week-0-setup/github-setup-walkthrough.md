@@ -25,7 +25,7 @@ If you already have a GitHub account, you can skip this step.
 
 Go to [GitHub](https://github.com/) and register for an account.
 
-Make sure you use your own email address here, not your SPS account!
+Make sure you use your own email address here, not your @google.com account!
 
 ## Unlink Google's Repo
 
