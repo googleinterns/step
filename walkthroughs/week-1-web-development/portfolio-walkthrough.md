@@ -367,7 +367,7 @@ mvn appengine:update
 ```
 
 -   The first time you run this command, the console will give you a link. Open
-    that link, and login to that page using your `@sps-program` account.
+    that link, and login to that page using your `@google.com` account.
 -   After you login, you'll see a long string of characters. Copy those
     characters.
 -   Paste the characters into the console and press enter.
@@ -399,7 +399,7 @@ Congratulations, you now have a portfolio page deployed to a live URL! Make sure
 you share your URL with your team and in the chat.
 
 If you have extra time left over, consider adding a page that describes your
-experiences with SPS so far, or writing JavaScript that makes your page
+experiences with STEP so far, or writing JavaScript that makes your page
 interactive, or using CSS to make your page more beautiful.
 
 Next week, you'll learn about server-side code and add a comment feature to your
