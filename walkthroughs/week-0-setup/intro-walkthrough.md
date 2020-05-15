@@ -34,7 +34,7 @@ Cloud Shell comes with a built-in code editor that allows you to browse file
 directories and view and edit files.
 
 The editor displays the directory structure in its left-hand panel. You'll learn
-more about these files throughout SPS, but for now try clicking around to
+more about these files throughout STEP, but for now try clicking around to
 explore. Try opening the
 <walkthrough-editor-open-file
     filePath="step/walkthroughs/week-0-setup/intro-walkthrough.md">
