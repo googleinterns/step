@@ -18,7 +18,9 @@ Click the **Start** button to begin!
 
 ## Choose a Library
 
-Choose one of the following libraries to add to your portfolio:
+Choose at least two of the following libraries to add to your portfolio.
+
+As you select which libraries to integrate into your portfolio, think about your capstone project and how each of these libraries could add interesting functionality to your project.
 
 ### Authentication
 
@@ -40,18 +42,17 @@ Start the Blobstore walkthrough by executing this command:
 teachme ~/step/walkthroughs/week-3-libraries/blobstore/blobstore-walkthrough.md
 ```
 
-### Image Analysis
+### Image Analysis (requires Blobstore)
 
 Image analysis allows you to detect the contents of an image.
+
+Since this library requires Blobstore, make sure to complete the Blobstore project first. Blobstore and Image Analysis count as two libraries for our purposes.
 
 Start the image analysis walkthrough by executing this command:
 
 ```bash
 teachme ~/step/walkthroughs/week-3-libraries/image-analysis/image-analysis-walkthrough.md
 ```
-
-**Note:** This library requires Blobstore, so if you're interested in image
-analysis, make sure to finish the Blobstore project first!
 
 ### Charts
 

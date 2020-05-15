@@ -64,6 +64,8 @@ Your implementation must pass every test in `FindMeetingQueryTests.java` before
 the feature will be considered complete. Keep in mind, if a test is failing, it
 means that your code needs to change, not the test.
 
+Ignore optional attendees for now.
+
 To run the tests, `cd` into the `project` directory and then execute this
 command:
 
@@ -72,6 +74,38 @@ mvn test
 ```
 
 When all the tests pass, you can be confident that your code works!
+
+## Writing more tests
+
+To practice the principles of Test-Driven Development, it is now your turn to write some tests.
+
+You are going to be adding some new functionality to your calendar, specifically, support for optional attendees for a meeting.
+
+The basic functionality of optional attendees is that if one or more time slots exists so that both mandatory and optional attendees can attend, return those time slots. Otherwise, return the time slots that fit just the mandatory attendees.
+
+Before implementing this feature, add some new tests to the <walkthrough-editor-open-file
+    filePath="step/walkthroughs/week-4-tdd/project/src/test/java/com/google/sps/FindMeetingQueryTest.java">
+  FindMeetingQueryTest.java
+</walkthrough-editor-open-file>
+
+file. Write one test for each of the following scenarios:
+
+1. Based on `everyAttendeeIsConsidered`, add an optional attendee C who has an all-day event. The same three time slots should be returned as when C was not invited.
+2. Also based on `everyAttendeeIsConsidered`, add an optional attendee C who has an event between 8:30 and 9:00. Now only the early and late parts of the day should be returned.
+3. Based on `justEnoughRoom`, add an optional attendee B who has an event between 8:30 and 8:45. The optional attendee should be ignored since considering their schedule would result in a time slot smaller than the requested time.
+4. No mandatory attendees, just two optional attendees with several gaps in their schedules. Those gaps should be identified and returned.
+5. No mandatory attendees, just two optional attendees with no gaps in their schedules. `query` should return that no time is available.
+
+Feel free to add additional tests for other scenarios that you think might be worth testing.
+
+Then modify `query` to make those new tests (and the provided tests) pass.
+
+
+## Optional Coding Challenge
+
+**Note**: This part of the activity is not required but a challenge you can take on if you have the time:
+
+Implement an optimized version of the optional attendee functionality: If no time exists for all optional and mandatory attendees, find the time slot(s) that allow mandatory attendees and the greatest possible number of optional attendees to attend.
 
 ## Pull Request
 
