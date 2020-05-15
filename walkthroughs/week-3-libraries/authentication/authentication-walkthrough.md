@@ -145,8 +145,8 @@ String email = userService.getCurrentUser().getEmail();
 messageEntity.setProperty("email", email);
 ```
 
-`cd` into the `shoutbox-v3` directory and run a dev server to see this in
-action.
+`cd` into the `shoutbox-v3` directory, run a dev server, and navigate to
+`/shoutbox` to see this in action.
 
 ## Nicknames
 
