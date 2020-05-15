@@ -168,7 +168,7 @@ request to the `/my-form-handler` URL. The `doPost()` function gets the value
 entered in the text area, and it then gets the URL for the uploaded image. The
 `getUploadedFileUrl()` function might seem intimidating, but most of that is
 checking for corner cases. The core of the logic for getting the image URL is
-in the last 3 lines of code.
+in calling imagesService to retrieve the image's URL.
 
 You can then use that URL to create an `<img>` element. In a real project, you'd
 probably do something like store the image URL in an `ArrayList` or in
