@@ -174,15 +174,14 @@ When you're happy with your comments feature and you're ready to show it to the
 world, you can deploy it to your live server!
 
 Last week, you should have added your project ID to your
-<walkthrough-editor-open-file
-    filePath="step/portfolio/src/main/webapp/WEB-INF/appengine-web.xml">
-  appengine-web.xml
+<walkthrough-editor-open-file filePath="step/portfolio/pom.xml">
+  pom.xml
 </walkthrough-editor-open-file>
 file. If so, you can deploy to your live server by executing this command from
 the `portfolio` directory:
 
 ```bash
-mvn appengine:update
+mvn package appengine:deploy
 ```
 
 -   The first time you run this command, the console will give you a link. Open

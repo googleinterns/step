@@ -93,7 +93,7 @@ cd portfolio
 Then execute this command:
 
 ```bash
-mvn appengine:devserver
+mvn package appengine:run
 ```
 
 This command tells Maven to run an App Engine development server, which is
@@ -137,10 +137,10 @@ in the foreground, which will usually cause the program to abort.
 
 Whenever you change your code, you need to restart your server to see your
 changes. Press `ctrl + c` in the console to shut down your server, and then run
-the devserver command again:
+this command again:
 
 ```bash
-mvn appengine:devserver
+mvn package appengine:run
 ```
 
 **Tip:** You can press the up arrow key to cycle through previous commands
@@ -175,7 +175,7 @@ Deploy the example webpage by `cd`-ing into the `stanley` directory and then
 running a dev server:
 
 ```bash
-mvn appengine:devserver
+mvn package appengine:run
 ```
 
 Then look through the files in the `stanley` project to see an example of HTML,
@@ -324,7 +324,7 @@ Remember, to run a dev server, you `cd` into a directory that contains a
 `pom.xml` file, and then you execute this command:
 
 ```bash
-mvn appengine:devserver
+mvn package appengine:run
 ```
 
 When you see `Dev App Server is now running` in the console, click the
@@ -382,16 +382,15 @@ To deploy to a live server:
 -   Make sure your project is selected in the dropdown at the top.
 -   Find the **Project ID** on that page.
 -   Open the
-    <walkthrough-editor-open-file
-        filePath="step/portfolio/src/main/webapp/WEB-INF/appengine-web.xml">
-      appengine-web.xml
+    <walkthrough-editor-open-file filePath="step/portfolio/pom.xml">
+      pom.xml
     </walkthrough-editor-open-file>
     file.
 -   Change `YOUR_PROJECT_ID_HERE` to your project ID.
 -   Execute this command:
 
 ```bash
-mvn appengine:update
+mvn package appengine:deploy
 ```
 
 -   The first time you run this command, the console will give you a link. Open
