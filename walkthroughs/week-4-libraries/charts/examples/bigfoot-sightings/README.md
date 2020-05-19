@@ -12,6 +12,6 @@ which I found by searching on
 
 You can run this locally by executing this command:
 
-```
-mvn appengine:devserver
+```bash
+mvn package appengine:run
 ```
