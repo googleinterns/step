@@ -93,7 +93,7 @@ public class FormHandlerServlet extends HttpServlet {
     // path to the image, rather than the path returned by imagesService which contains a host.
     try {
       URL url = new URL(imagesService.getServingUrl(options));
-      return new URLurl.getPath();
+      return url.getPath();
     } catch (MalformedURLException e) {
       return imagesService.getServingUrl(options);
     }
