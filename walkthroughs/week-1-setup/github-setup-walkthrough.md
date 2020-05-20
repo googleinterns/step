@@ -101,7 +101,8 @@ To give your host access to your repo, add them as a collaborator.
 1.  Go to the `Settings` tab.
 1.  Select `Collaborators`. (*Note*: If you don't see this,
     look for `Manage Access` -> `Invite a Collaborator` instead)
-1.  Add your host using their GitHub username or email address (you can send them a quick message to confirm their Github username).
+1.  Add your host using their GitHub username or email address (you can send
+them a quick message to confirm their Github username).
 
 Your host can now help with code reviews.
 
@@ -145,7 +146,7 @@ file.
 
 This file contains the content that shows in your repo's GitHub page.
 Change it to say "This repo contains [your name]'s portfolio and
-SPS projects."
+STEP projects."
 
 The `README.md` file now belongs to you. You should feel free to customize it
 and make it your own!
