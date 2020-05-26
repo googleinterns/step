@@ -16,19 +16,39 @@
             color:White;
 
         }
+        /*style for the a tag*/
+        a{
+            text-decoration:none;
+            color:White;
+            display:block;
+            text-align:center;
+            font-size:15px;
+            width:200px;
+            height:20px;
+            border-bottom-style: solid;
+            border-bottom-color: black;
+            background-color:Purple;
+            padding:10px;
+
+        }
         
         /*create two columns next to each other*/
         nav{
             float:left;
             width:16%;
             height:1141px;
-            background-color:LightSteelBlue;
-            padding:5px
+            background-color:AliceBlue;
+            padding:5px;
+            
         }  
         /*style the list in the nav menu*/
         nav ul {
              list-style-type: none;
              padding:0;
+             font-family: Arial, sans-serif;
+            font-size: medium;
+            font-weight: bold;
+            
             
         }
         article{
@@ -45,13 +65,13 @@
             float:left;
         }
         /*style the divider*/
-        div 
-         { 
-         color: white; 
-         background-color: 009900; 
-         margin: 2px; 
-         font-size: 25px; 
-         } 
+        div {
+        background-color: AliceBlue;
+        width: 250px;
+        height:40px;
+        border: 15px black;
+        margin: 20px;
+}
          /*style the footer*/
          footer 
          {
@@ -69,9 +89,10 @@
 
       <nav>
           <ul>
-              <li>My Favorite Things</li><br>
-              <li>What I Enjoy</li><br>
-              <li>Something Fun</li><br>
+              <li><a href="index.html"> Home </a></li><br>
+              <li><a href="favorite_things.html">My Favorite Things</a></li><br>
+              <li><a href="what_i_enjoy.html">What I Enjoy</a></li><br>
+              <li><a href="interactive.html">Something Fun</a></li>
           </ul>  
       </nav>
 
@@ -92,7 +113,8 @@
           <img src="/images/pic_of_me.jpg" alt="Picture of Me"width="400" height="500">
           <img src="/images/pic_of_duke.jpg" alt="Picture of Duke Chapel" width="410" height= "500">
 
-          <div> div tag </div>
+          <div>   </div>
+          <div> </div>
             
             <h3> Why Computer Science? </h3>
           <p> Ever since I can remember, I have always been interested in learning how 
@@ -107,14 +129,14 @@
               Engineering Program, internship. 
           </p>
 
-          <div> div tag </div>
+          <div>  </div>
 
           <h3> Learn More About Me</h3>
           <p> To find out more about me, please click on the buttons below or click on the links to the left of this 
               page!
           </p>
 
-          <div> div tag </div>
+          <div>  </div>
           <button onclick="document.location='favorite_things.html'"> My Favorite Things </button>
           <button onclick="document.location='what_i_enjoy.html'"> Current Hobbies</button>
           <!--figure out exactly what this Interactive piece will be-->
@@ -126,7 +148,6 @@
 
       <footer>
           <p> Author: Dominique Buford </p>
-          <p>email: <a href="mail to:db334@gmail.com">db334@gmail.com</a></p>
     </footer>
 
         
