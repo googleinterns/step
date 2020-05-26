@@ -5,14 +5,109 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+
+    <style>
+        /*style the header*/
+        header{
+            background-color:LightBlue;
+            padding: 30px;
+            text-align:center;
+
+        }
+        
+        /*create two columns next to each other*/
+        nav{
+            float:left;
+            width:16%;
+            height:630px;
+            background-color:GhostWhite;
+            padding:5px
+        }  
+        /*style the list in the nav menu*/
+        nav ul {
+             list-style-type: none;
+             padding:0;
+            
+        }
+        article{
+            float:left;
+            height:620px;
+            width:80.5%;
+            padding:20px;
+            background-color:AliceBlue;
+
+        }
+        
+        img{
+            float:left;
+        }
+        div 
+         { 
+         color: white; 
+         background-color: 009900; 
+         margin: 2px; 
+         font-size: 25px; 
+         } 
+    </style>
   </head>
   <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    </div>
+      <header>
+      <h2>Dominique's Portfolio</h2>
+     </header>
+
+      <nav>
+          <ul>
+              <li>Gallery of My Favorite Things</li><br>
+              <li>What I Enjoy</li><br>
+              <li>Something Fun</li><br>
+          </ul>  
+      </nav>
+
+      <article>
+          <h3> All About Me!</h3>
+          <p> Hi, my name is Dominique Buford. I am from Dallas, Texas, I'm a sophomore at Duke University, and I plan
+               to major in Computer Science. At Duke, I am a member of the Baldwin Scholars Program and the MireCourt Selective
+               Living Group. I've grown up always watching sports with my dad, so, of course, my favorite part of Duke 
+               is attending the Duke Men's and Women's Basketball games. <br><br>
+            I am also very close with my family and I love spending time with them! My family includes my mom, my dad,
+             my two sisters, Brianna and Cortney, and my two dogs, T.J. and Bella. Recently, we have enjoyed participating
+             in "Quarantine Olympics", which consists of a series of At-Home Challenges. 
+              
+              
+          </p>
+        <br>
+          <img src="/images/pic_of_fam.jpg" alt="Picture of my Family" width="410" height="500">
+          <img src="/images/pic_of_me.jpg" alt="Picture of Me"width="400" height="500">
+          <img src="/images/pic_of_duke.jpg" alt="Picture of Duke Chapel" width="410" height= "500">
+
+          <div> div tag </div>
+            
+            <h3> Why Computer Science? </h3>
+          <p> Ever since I can remember, I have always been interested in learning how 
+              things around us function. From my favorite Robot Puppy toy to more advanced items like the television,
+              everything seemed to peak my interest and curiosity. As my involvement with technology increased, 
+              I became even more interested on how it all worked. More importantly, I wanted to know how I, myself, 
+              could create something of my own with technology. <br> <br>I believe that coding is a unique way to combine 
+              technology and creativity to produce amazing and useful projects that can impact the world
+              around us. Fortunately, since technology continues to rapidly evovle before our very eyes,
+              there is always so many new things to learn. In order to continue to build upon my current coding 
+              knowledge,this summer, I have the opportunity to be apart of Google's STEP, Student Training in 
+              Engineering Program, internship. 
+          </p>
+
+          <div> div tag </div>
+
+          <h3> Learn More About Me</h3>
+          <p> To find out more about me, please click on the buttons below or click on the links to the left of this 
+              page!
+          </p>
+
+        
+      </article>
+
+      
+
+        
+
   </body>
 </html>
