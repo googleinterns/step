@@ -16,6 +16,11 @@
             color:White;
 
         }
+        /*style the body*/
+        body
+        {
+            background-color:AliceBlue;
+        }
         /*style for the a tag*/
         a{
             text-decoration:none;
@@ -36,7 +41,6 @@
         nav{
             float:left;
             width:16%;
-            height:1141px;
             background-color:AliceBlue;
             padding:5px;
             
@@ -53,12 +57,12 @@
         }
         article{
             float:left;
-            height:100%;
             width:80.5%;
             padding:20px;
             background-color:AliceBlue;
 
         }
+
 
         /*float the image*/
         img{
@@ -72,24 +76,42 @@
         border: 15px black;
         margin: 20px;
 }
+        /*change color of active tab*/
+        .active
+        {
+            background-color:Plum;
+        }
+        a:hover
+        {
+            background-color:LightPink;
+        }
+
+        /* Clear floats after the columns */
+        section:after 
+        {
+            content: "";
+            display: table;
+            clear: both;
+        }
          /*style the footer*/
          footer 
          {
              background-color: Black;
-             padding: 20px;
+             padding: 10px;
              color: White;
              text-align:center;
          }
+
     </style>
   </head>
   <body>
       <header>
       <h2>Dominique's Portfolio</h2>
      </header>
-
+<section>
       <nav>
           <ul>
-              <li><a href="index.html"> Home </a></li><br>
+              <li><a class="active" href="index.html"> Home </a></li><br>
               <li><a href="favorite_things.html">My Favorite Things</a></li><br>
               <li><a href="what_i_enjoy.html">What I Enjoy</a></li><br>
               <li><a href="interactive.html">Something Fun</a></li>
@@ -114,7 +136,7 @@
           <img src="/images/pic_of_duke.jpg" alt="Picture of Duke Chapel" width="410" height= "500">
 
           <div>   </div>
-          <div> </div>
+          <div>  </div>
             
             <h3> Why Computer Science? </h3>
           <p> Ever since I can remember, I have always been interested in learning how 
@@ -136,7 +158,6 @@
               page!
           </p>
 
-          <div>  </div>
           <button onclick="document.location='favorite_things.html'"> My Favorite Things </button>
           <button onclick="document.location='what_i_enjoy.html'"> Current Hobbies</button>
           <!--figure out exactly what this Interactive piece will be-->
@@ -145,10 +166,12 @@
 
         
       </article>
+      </section>
+      
 
       <footer>
           <p> Author: Dominique Buford </p>
-    </footer>
+      </footer>
 
         
 
