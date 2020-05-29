@@ -1,0 +1,160 @@
+.button, 
+button {
+
+
+    display: block;
+
+    font-weight: bold;
+    
+    @extend .no-link-style;
+
+
+    // states
+    &:hover {
+        cursor: pointer;
+    }
+
+    // multi-button margin
+    &:not(:last-child) {
+        margin-right: .4em;
+    }
+    
+    // variations
+
+    &.button--link {
+
+        padding: .65em 1.2em .65em 1em;;
+
+        background: rgba(black, .05);
+        border-radius: 999px;
+        transition: background 200ms ease;
+
+        i {
+            font-size: .9em;
+            margin-right: 5px;
+            opacity: .8;
+        }
+
+        &:hover {
+            background: rgba(black, .1);
+            color: $color-encourage;
+        }
+    }
+
+    &.button--attachment {
+        
+        display: inline-flex;
+        align-items: center;
+
+        padding: 12px 15px;
+        filter: opacity(.9);
+
+        font-size: .9em;
+
+        border: 1px solid rgba(white,.4);
+        
+        border-radius: 8px;
+
+        transition: 200ms ease;
+        transition-property: filter, background, border-color;
+
+        i {
+            margin-right: 10px;
+            font-size: .75em;
+        }
+        span {
+            margin-right: 2px;
+        }
+
+        &:hover {
+            border-color: rgba(black, .7);
+            background: rgba(black, .05);
+        }
+    }
+
+    &.button--ghost {
+
+        transition: opacity 200ms ease;
+        color: $color-encourage;
+
+        &:hover {
+            color: $body-text-color;
+            opacity: .6;
+        }
+    }
+}
+
+// project 
+
+.project {
+    display: flex;
+    margin-bottom: 2em;
+    padding-right: 2em;
+
+    min-width: 300px;
+
+
+    .project__icon {
+        width: 2em;
+        margin-right: 1em;
+        height: auto;
+        
+        
+        img {
+            width: 100%;
+        }
+    }
+
+    .project__content {
+        flex: 1;
+    }
+
+    h4 {
+        margin-bottom: .5em;
+    }
+
+    p {
+        margin-bottom: .5em;
+    }
+}
+
+
+// carousel
+.carousel {
+
+    .flickity-slider {
+
+        // height: 750px !important;
+    }
+
+    .carousel-cell {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+        margin-right: 1em;
+        border-radius: 5px;
+        counter-increment: gallery-cell;
+
+        &:last-child {
+            padding-right: 2/12*100vw;
+        }
+
+        img {
+            height: 500px;
+        }
+
+        span {
+            display: block;
+            margin-top: .6em;
+            margin-left: 1em;
+            max-width: 400px;
+
+            font-size: .9em;
+            line-height: 1.5;
+            opacity: .7;
+            font-weight: 700;
+        }
+      }
+}

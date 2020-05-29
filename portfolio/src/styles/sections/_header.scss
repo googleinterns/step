@@ -1,0 +1,61 @@
+header {
+    padding: 1/5*100vh 2/12*100vw;
+    height: 85vh;
+
+    span {
+        display: block;
+        font-style: italic;
+        font-weight: 700;
+        margin: 0;
+        margin-bottom: 1.2em;
+    }
+
+    h1 {
+        font-size: 6rem;
+        line-height: 1.1;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        
+        width: 4/12*100vw;
+        margin-bottom: 1.2em;
+        
+        &.lead {
+            font-size: 1.4em;
+            line-height: 1.8em;
+        }
+    }
+
+    ul {
+        @extend .list--horizontal, .no-link-style;
+    }
+
+    .header__links {
+
+        .header__social-links {
+    
+            margin-bottom: 1.1em;
+            
+            .button {
+                display: inline-block;
+            }
+        }
+    
+        .button--attachment {
+    
+        }
+    
+        // will-changes
+        &:hover {
+            .button--link {
+                will-change: background;
+            }
+    
+            .button--attachment {
+                will-change: background, border
+            }
+        }
+    }
+}
+
