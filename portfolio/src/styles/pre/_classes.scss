@@ -35,7 +35,21 @@
 
     
     height: 1px;
-    background: rgba(black, .15);
+    background: rgba(rgb(14, 13, 68), .1);
 
     border: none;
+}
+
+.subtitle {
+
+    opacity: .7;
+
+    font-size: .9em;
+    font-weight: 700;
+    line-height: 1.5;
+
+
+    &::selection {
+        background: transparent;
+    }
 }

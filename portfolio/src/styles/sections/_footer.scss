@@ -11,15 +11,16 @@ footer {
             padding: 4em 0 4em 2/12*100vw;
             width: 5/12*100vw;
     
+            border-radius: 0 6px 6px 0;
     
             background: $purple;
     
             color: white;
     
             h2 {
-                // margin-bottom: 0;
                 color: white;
-                // font-family: $font-body;
+                line-height: 1;
+                margin-bottom: .8em;
             }
         
             a.button.button--full {
@@ -40,6 +41,8 @@ footer {
             margin-left: 1/24*100vw;
             background: url("../assets/images/pattern.png");
             width: 13/24*100vw;
+
+            border-radius: 6px 0 0 6px;
         }
     }
 

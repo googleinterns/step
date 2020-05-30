@@ -83,6 +83,8 @@ button {
         display: inline-block;
         padding: .8em 1em;
         background: white;
+
+        border-radius: 3px;
     }
 }
 
@@ -148,6 +150,7 @@ button {
 
         img {
             height: 500px;
+            border-radius: 4px;
         }
 
         span {
@@ -156,10 +159,7 @@ button {
             margin-left: 1em;
             max-width: 400px;
 
-            font-size: .9em;
-            line-height: 1.5;
-            opacity: .7;
-            font-weight: 700;
+            @extend .subtitle;
         }
       }
 
