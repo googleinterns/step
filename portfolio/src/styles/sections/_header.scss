@@ -1,59 +1,79 @@
 header {
-    padding: 1/5*100vh 2/12*100vw;
+    padding:  0 1/12*100vw;
     height: 85vh;
 
-    span {
-        display: block;
-        font-style: italic;
-        font-weight: 700;
-        margin: 0;
-        margin-bottom: 1.2em;
-    }
+    display: flex;
 
-    h1 {
-        font-size: 6rem;
-        line-height: 1.1;
-        margin-bottom: 1rem;
-    }
-
-    p {
-        
+    .image {
+        margin: 10vh 1/12*100vw;
         width: 4/12*100vw;
-        margin-bottom: 1.2em;
+        overflow: hidden;
+        height: 65vh;
         
-        &.lead {
-            font-size: 1.4em;
-            line-height: 1.8em;
-        }
+        background: url("../assets/images/autumn.jpg") center no-repeat;
+        filter: contrast(108%) brightness(105%);
+        background-size: cover;
+        
+
+        box-shadow: 0px 10px 93px -45px rgba(0,0,0,0.75);
+        border-radius: 6px;
     }
-
-    ul {
-        @extend .list--horizontal, .no-link-style;
-    }
-
-    .header__links {
-
-        .header__social-links {
     
-            margin-bottom: 1.1em;
+
+    .content {
+        padding: 1/5*100vh 0;
+
+        span {
+            display: block;
+            font-style: italic;
+            font-weight: 700;
+            margin: 0;
+            margin-bottom: 1.2em;
+        }
+    
+        h1 {
+            font-size: 6rem;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+        }
+    
+        p {
             
-            .button {
-                display: inline-block;
+            width: 3/12*100vw;
+            margin-bottom: 1.2em;
+            
+            &.lead {
+                font-size: 1.2em;
+                line-height: 1.8em;
             }
         }
     
-        .button--attachment {
-    
+        ul {
+            @extend .list--horizontal, .no-link-style;
         }
     
-        // will-changes
-        &:hover {
-            .button--link {
-                will-change: background;
-            }
+        
+        .header__links {
+            font-size: .9em;
     
-            .button--attachment {
-                will-change: background, border
+            .header__social-links {
+        
+                margin-bottom: 1.1em;
+                
+                .button {
+                    display: inline-block;
+                }
+            }
+            
+            // will-changes
+            &:hover {
+                .button--link {
+                    will-change: background;
+                }
+        
+                .button--attachment {
+                    will-change: background, border
+                }
             }
         }
     }

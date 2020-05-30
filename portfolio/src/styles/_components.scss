@@ -8,7 +8,6 @@ button {
     
     @extend .no-link-style;
 
-
     // states
     &:hover {
         cursor: pointer;
@@ -48,11 +47,8 @@ button {
 
         padding: 12px 15px;
         filter: opacity(.9);
-
         font-size: .9em;
-
         border: 1px solid rgba(white,.4);
-        
         border-radius: 8px;
 
         transition: 200ms ease;
@@ -82,17 +78,25 @@ button {
             opacity: .6;
         }
     }
+
+    &.button--full {
+        display: inline-block;
+        padding: .8em 1em;
+        background: white;
+    }
 }
 
 // project 
 
 .project {
     display: flex;
-    margin-bottom: 2em;
     padding-right: 2em;
 
     min-width: 300px;
 
+    &:not(:last-child) {
+        margin-bottom: 2em;
+    }
 
     .project__icon {
         width: 2em;
@@ -122,11 +126,6 @@ button {
 // carousel
 .carousel {
 
-    .flickity-slider {
-
-        // height: 750px !important;
-    }
-
     .carousel-cell {
         width: auto;
         height: auto;
@@ -136,6 +135,12 @@ button {
         margin-right: 1em;
         border-radius: 5px;
         counter-increment: gallery-cell;
+
+        
+        // paddings to be consistent with site grid
+        &:first-child {
+            padding-left: 2/12*100vw;
+        }
 
         &:last-child {
             padding-right: 2/12*100vw;
@@ -157,4 +162,47 @@ button {
             font-weight: 700;
         }
       }
+
+
+    // base CSS Rules from Flickity
+    // copied here instead of import entire CSS file
+
+    &.flickity-enabled {
+        position: relative;
+    }
+    
+    &.flickity-enabled:focus { outline: none; }
+    
+    .flickity-viewport {
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+    }
+    
+    .flickity-slider {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    
+    /* draggable */
+    
+    &.flickity-enabled.is-draggable {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+    }
+    
+    &.flickity-enabled.is-draggable .flickity-viewport {
+        cursor: move;
+        cursor: -webkit-grab;
+        cursor: grab;
+    }
+    
+    &.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+        cursor: -webkit-grabbing;
+        cursor: grabbing;
+    }
 }

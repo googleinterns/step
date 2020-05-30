@@ -1,15 +1,55 @@
 footer {
 
-    margin: 2em 2/12*100vw;
+    margin: 4em 0;
 
-    h2 {
-        margin-bottom: 0;
+    .footer__content {
+
+        display: flex;
+
+        .footer__card {
+
+            padding: 4em 0 4em 2/12*100vw;
+            width: 5/12*100vw;
+    
+    
+            background: $purple;
+    
+            color: white;
+    
+            h2 {
+                // margin-bottom: 0;
+                color: white;
+                // font-family: $font-body;
+            }
+        
+            a.button.button--full {
+                background: $pink;
+                color: $purple;
+
+                transition: 200ms ease;
+        
+                &:hover {
+                    background: $pink-light;
+                }
+        
+            }
+        
+        }
+
+        .footer__pattern {
+            margin-left: 1/24*100vw;
+            background: url("../assets/images/pattern.png");
+            width: 13/24*100vw;
+        }
     }
 
+
     span {
+        margin-left: 2/12*100vw;
         display: block;
-        margin-top: 2em;
+        margin-top: 4em;
         font-style: italic;
         opacity: .7;
     }
+
 }

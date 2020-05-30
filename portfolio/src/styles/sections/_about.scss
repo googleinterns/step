@@ -1,13 +1,17 @@
 #about {
 
+    padding-left: 0;
     
+
+    .about__desc, .about__pics h3 {
+        margin-left: 2/12*100vw;
+    }
+
     article {
 
         width: 8/12*100vw;
         display: flex;
-        margin-bottom: 3em;
-
-        
+        margin-bottom: 3em;        
 
         p {
             flex: 1;
