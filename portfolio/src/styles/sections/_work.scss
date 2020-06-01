@@ -1,0 +1,21 @@
+#recent-work {
+
+
+    h2 {
+        margin-bottom: .4em;
+    }
+
+    .projects {
+
+        width: 8/12*100vw;
+        
+        display: flex;
+        flex-wrap: wrap;
+
+        .project {
+            flex: 1;
+        }
+    }
+
+}
+

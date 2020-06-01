@@ -1,0 +1,51 @@
+html {
+box-sizing: border-box;
+}
+*, *::before, *::after {
+box-sizing: inherit;
+}
+
+
+// global styling
+
+body {
+    color: $body-text-color;
+    background: $body-background-color;
+}
+  
+// typography
+
+body {
+    font-family: $font-body, sans-serif;
+    font-size: $font-size-body;
+    line-height: 1.8;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+h1, h2 {
+    font-family: $font-header, serif;
+    color: $header-text-color;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: .2em;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p, h1, h2, h3, h4, h5 ,h6 {
+    margin-top: 0;
+}
+
+// default layout rules
+
+section {
+    padding: 4em 0 4em 2/12*100vw;
+}

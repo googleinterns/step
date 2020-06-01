@@ -1,0 +1,9 @@
+
+@import "pre/normalize.css";
+@import 'pre/variables', 'pre/classes', "pre/global";
+
+@import "components";
+
+@import 'sections/header', 'sections/footer', 'sections/work', 'sections/about';
+
+@import "misc";
