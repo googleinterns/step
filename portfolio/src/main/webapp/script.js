@@ -15,7 +15,7 @@
 /**
  * Adds a random greeting to the page.
  */
-function addRandomGreeting() {
+const addRandomGreeting = () => {
   const greetings =
       ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
 
@@ -25,4 +25,23 @@ function addRandomGreeting() {
   // Add it to the page.
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
-}
+};
+
+/**
+ * Fetches data from the /data endpoint and puts it into the specified span
+ * element.
+ *
+ * @param {!HTMLSpanElement} span
+ */
+const fetchGreeting = async (span) => {
+  return fetch('/data')
+      .then((response) => response.text())
+      .then((text) => {
+        span.innerText = text;
+  });
+};
+
+document.addEventListener('DOMContentLoaded', (ev) => {
+  const span = document.getElementById('fetch-example');
+  fetchGreeting(span);
+});
