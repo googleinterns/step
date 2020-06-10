@@ -164,10 +164,12 @@ After your server is running again, click the
 select `Preview on port 8080` to see your changes. Get in the habit of rerunning
 your dev server to test your changes often!
 
-**Note:** If you don't see your changes after you refresh, your browser might be
-caching an old version. Follow the instructions
-[here](https://en.wikipedia.org/wiki/Wikipedia:Bypass_your_cache) to execute a
-cache-clearing refresh.
+**Warning:** If you don't see your changes after you refresh, your browser might
+be caching an old version. Perform a
+[cache-clearing refresh](https://en.wikipedia.org/wiki/Wikipedia:Bypass_your_cache)
+to force your browser to download the new files. In Chrome, open the Chrome Menu
+and click More Tools > Developer Tools. Then click and hold the browser Refresh
+button and select Empty Cache and Hard Reload from the drop-down menu.
 
 ## Example
 
