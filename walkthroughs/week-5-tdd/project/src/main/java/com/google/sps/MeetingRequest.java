@@ -21,6 +21,15 @@ import java.util.Collections;
 import java.util.HashSet;
 
 public final class MeetingRequest {
+
+  /////////////////////////////////////////////
+  // WARNING:
+  /////////////////////////////////////////////
+  // Any new fields added to this class
+  // must be reflected in the class of the
+  // same name in script.js
+  /////////////////////////////////////////////
+
   // All the people that should be attending this new meeting. Use a set to avoid duplicates.
   private final Collection<String> attendees = new HashSet<>();
 
