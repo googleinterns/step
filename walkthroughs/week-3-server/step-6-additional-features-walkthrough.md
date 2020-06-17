@@ -25,10 +25,9 @@ maximum number of comments to fetch and display.
 ### Server Support
 
 First, you'll update your servlet to accept a maximum number of comments
-in the request for `doGet()`. Check out SubtractionServlet.java in the
-`subtraction-game` directory for an example of how to read HTTP request
-params in your servlet. Your servlet should then limit the number of comments
-it returns based on the request parameter.
+in the request for `doGet()`. Check out some web references on how GET methods
+work compared to the POST methods you've used so far. Your servlet should then
+limit the number of comments it returns based on the request parameter.
 
 ### Query String Param
 
