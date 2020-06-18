@@ -12,6 +12,10 @@ teachme ~/step/walkthroughs/week-4-libraries/blobstore/blobstore-walkthrough.md
 
 Click the **Start** button to begin!
 
+## Java 8
+
+If you have not yet switched your environment to Java 8 (as instructed in the [week 2 walkthrough](https://github.com/googleinterns/step/blob/master/walkthroughs/week-2-web-development/portfolio-walkthrough.md#java-8)), you will need to do so now before continuing with this walkthrough.
+
 ## The Goal
 
 The goal of this project is to use Blobstore to add image uploads to the
