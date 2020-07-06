@@ -30,6 +30,8 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/nickname")
 public class NicknameServlet extends HttpServlet {
+  private static final DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
+  private static final UserService userService = UserServiceFactory.getUserService();
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -37,7 +39,6 @@ public class NicknameServlet extends HttpServlet {
     PrintWriter out = response.getWriter();
     out.println("<h1>Set Nickname</h1>");
 
-    UserService userService = UserServiceFactory.getUserService();
     if (userService.isUserLoggedIn()) {
       String nickname = getUserNickname(userService.getCurrentUser().getUserId());
       out.println("<p>Set your nickname here:</p>");
@@ -54,7 +55,6 @@ public class NicknameServlet extends HttpServlet {
 
   @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
-    UserService userService = UserServiceFactory.getUserService();
     if (!userService.isUserLoggedIn()) {
       response.sendRedirect("/nickname");
       return;
@@ -63,7 +63,6 @@ public class NicknameServlet extends HttpServlet {
     String nickname = request.getParameter("nickname");
     String id = userService.getCurrentUser().getUserId();
 
-    DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
     Entity entity = new Entity("UserInfo", id);
     entity.setProperty("id", id);
     entity.setProperty("nickname", nickname);
@@ -77,7 +76,6 @@ public class NicknameServlet extends HttpServlet {
    * Returns the nickname of the user with id, or empty String if the user has not set a nickname.
    */
   private String getUserNickname(String id) {
-    DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
     Query query =
         new Query("UserInfo")
             .setFilter(new Query.FilterPredicate("id", Query.FilterOperator.EQUAL, id));
