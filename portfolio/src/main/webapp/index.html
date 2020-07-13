@@ -4,15 +4,131 @@
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <script src="script.js"></script>
   </head>
   <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    </div>
+    <nav>
+        <div class="nav__logo">
+            <img src="images/logo.svg">
+        </div>  
+        <ul class="nav__items">
+            <li class="nav__item active">Home</li>
+            <li class="nav__item">Projects</li>
+            <li class="nav__item">Skills</li>
+            <li class="nav__item">Cats</li>
+            <li class="nav__item">Contacts</li>
+        </ul>
+    </nav>
+    <main>
+        <section class="home">
+            <img src="images/anime-me.jpeg"
+            <p>Hi! My name is Olya and this is my personal page.</p>
+        </section>
+        <section class="projects">
+            <ul>
+                <li class="project">
+                    <h3>BigSister</h3>
+                    <p class="project__description">
+                        The web application for monitoring students activity,
+                        motivating them with bonuses, which they can spend on the swag shop.
+                        <br>
+                        Technologies: TypeScript, Polymer, CSS, Bulma, Kotlin, MongoDB.
+                        <br>
+                        Done: SPA with events, projects, shop, personal pages, etc.
+                        Finished API for some essential things.
+                    </p>
+                </li>
+                <li class="project">
+                    <h3>Scala Images Bot</h3>
+                    <p class="project__description">
+                        Funny bot which sends you a picture based on a tag that you've given.
+                        Result can be REALLY strange, but that's all Imgur API, so we're 
+                        out of business.
+                        <br>
+                        Technologies: Scala, Imgur API
+                        <br>
+                        Done: half of the whole project (wow, it's a finished project!)
+                    </p>
+                </li>
+                <li class="project">
+                    <h3>Huffman Archiver</h3>
+                    <p class="project__description">
+                        Just a Huffman Archiver on C++, beautiful code with smart pointers, 
+                        casting and obvious algorithm for building Haffman tree. 
+                        <br>
+                        Interesting fact: my teacher said that I should use unique_ptr, and 
+                        it wasn't so easy to add them because of priority queue, but I did it, and 
+                        then he said: "oops, it wasn't necessary, actually".
+                    </p>
+                </li>
+                <li class="project">
+                    <h3>CYK with Chomsky Normal Form</h3>
+                    <p class="project__description">
+                        Just a CYK algorithm with the ability to convert context free grammar to 
+                        chomsky normal form.
+                        <br>
+                        Technologies: Kotlin, ANTLR4
+                        <br>
+                        I almost died when I implemented CNF algorithm, it cost me 3 or 4 days of suffering and debug.
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section class="skills">
+            <div class="skills__technologies">
+                <h3>Technologies</h3>
+                <p>Kotlin, C++, HTML, CSS, JavaScript/TypeScript, Algorithms & Data Structures</p>
+            </div>
+            <div class="skills__languages">
+                <h3>Languages</h3>
+                <p>Russian(Native), English(B2), Spanish(A1/A2)</p>
+            </div>
+        </section>
+        <section class="cats">
+            <h2>The most interesting section! I must introduce all my cats!!!</h2>
+            <ul>
+                <li class="cats__cat">
+                    <img src="">
+                    <div class="cat__description">
+                        <h3>Loki</h3>
+                        <p>Cute ball of fur and fat. Lives in Omsk, spends his summer in the country house with
+                        his friend, catches mices, tries to catch a sparrow sometimes.</p>
+                    </div>
+                </li>
+                <li class="cats__cat">
+                    <img src="">
+                    <div class="cat__description">
+                        <h3>Cheburek</h3>
+                        <p>The most affectionate and impudent cat in the world. Lives with my sister and Belyash. 
+                        Likes watching TV, sit on people's lap and eat.</p>
+                    </div>
+                </li>
+                <li class="cats__cat">
+                    <img src="">
+                    <div class="cat__description">
+                        <h3>Belyash</h3>
+                        <p>Arrogant and handsome. Lives with my sister and Cheburek. Likes to talk with me, but I don't
+                        understand cat's language. Doesn't like to sit on people's lap or being picked up. Likes to
+                        put his face in sneackers.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="footer contacts">
+            <ul class="contacts__icons">
+                <li class="facebook_icon">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                </li>
+                <li class="instagram_icon">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </li>
+                <li class="linkedin_icon">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </li>
+            </ul>
+            <p class="email">olgashimanskaia@gmail.com</p>
+        </section>      
+    </main>
   </body>
 </html>
