@@ -119,8 +119,9 @@ set your repo to require pull requests.
 5.  Type `master` into the `Branch name pattern` text box.
 6.  Select `Require pull request reviews before merging` and `Include
     administrators`.
-7.  Click `Create`.
-8.  Click `Save changes`.
+7.  Select `Dismiss stale pull request approvals when new commits are pushed`.
+8.  Click `Create`.
+9.  Click `Save changes`.
 
 ## Tell git Who You Are
 
